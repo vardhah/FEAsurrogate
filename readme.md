@@ -12,4 +12,6 @@ The motivation for learning a surrogate is the ability to interpolate or predict
 The material used to design the vessel is Aluminium alloy (Al6061-T6) which is the most commonly used material for pressure vessel design.   
     
 Our NN architecture is a multilayered NN with 9 layers. Our network has four major constituents- fully connected layer (linear+ReLU), dropout layer, skip connections, and output layer. The input layer is the concatenation of the normalized vector of design variables and sub-sea pressure ($[D_{sea}, L_V, Th_V, R_{end}]$)
-   
+ 
+ 
+ Our DNN model performed at significantly higher accuracy (92\%) in comparison to other models - Random forest (72\%) and  Gradient boost regressor (47 \%). Our trained model also has one-third less number of outliers than the Random forest and Gradient Boost models.
